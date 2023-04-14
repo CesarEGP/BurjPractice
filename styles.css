@@ -1,0 +1,103 @@
+a{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 125%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*para tener un scroll controlado*/
+.contenedor{
+    height: auto;
+    overflow-y: hidden;
+}    
+
+body {
+    background: linear-gradient(#427b92 0%,#c48c44 99%);
+    height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3% 10%;  /*parte importante donde se centra el header*/
+    display: flex;    
+    justify-content: space-between; /*se separa una gran division en la mitad de 2 contenido*/
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.logo{
+    color: #fff;
+    font-size: 3em;
+    cursor: default;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none; /*con esta instancia se quita el sub-rayado a la palabras*/
+    margin-left: 55px; 
+    font-weight: 600;   
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    background: #b67623;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107vh;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#060c46 0%,#4f93ad 99%);
+    /*acá puede ir un color de background*/
+}
+
+.sec h2{
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.sec h2:nth-child(2){
+    font-size: 3em;
+}
+
+.sec p{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer h2{
+    position: relative;  /*se coloca adelante*/
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(#4f93ad 0%,#255370 99%);
+}
